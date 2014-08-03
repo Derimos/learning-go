@@ -28,5 +28,5 @@ func main() {
 	fmt.Println(sum3)
 
 	//infinite loop
-	// for {}
+	// for a{}
 }
