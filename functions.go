@@ -1,8 +1,10 @@
 // 1. Start with functions :), why not
 
+// we are now in main package
 package main
 
-import "fmt"
+import "fmt" // we want to import another package: fmt
+// fmt is like stdio in c, standart input and output etc...
 
 // bot arguments have type defined, and int as result
 func add(x int, y int) int {
@@ -29,7 +31,7 @@ func split(sum int) (x, y int) {
 
 func main() {
 	
-	fmt.Println(add(10, 20))
+	fmt.Println(add(10, 20)) // we are using Println function of package fmt
 
 	fmt.Println(add2(12, 20))
 
