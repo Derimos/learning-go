@@ -29,4 +29,31 @@ func main() {
 	for i := 0; i < len(p); i++ {
 		fmt.Printf("p[%d] == %d\n", i, p[i])
 	}
+
+	// Slices can be resliced : creates a new slice value that points to the same array
+	// s[lo:hi] : from lo to hi-1
+	s := []int{2, 3, 5, 7, 11, 13}
+	fmt.Println("s ==", s)
+	fmt.Println("s[1:4] ==", s[1:4])
+
+	fmt.Println("s[:3] ==", s[:3]) // if we don't have lo index it is 0
+	fmt.Println("s[4:] ==", s[4:]) // if we don't have hi index it will be len(s)
+
+
+	// Making Slices
+	slicea := make( []int, 5)
+	printSlice("slicea", slicea)
+
+
+
+
+
+}
+
+// notice that here we don't have return type notifier
+// and this is just another example of function
+func printSlice(s string, x []int) /* type is missing*/ {
+
+	fmt.Printf("%s len=%d cap=%d %v \n", s, len(x), cap(x), x)
+	// %s is some sort of Interfacing but we'll leave it for now
 }
