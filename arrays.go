@@ -41,12 +41,22 @@ func main() {
 
 
 	// Making Slices
-	slicea := make( []int, 5)
+	slicea := make( []int, 5) // len is five, so slice with 5 zeroes will be created
+
+	slicea[0] = 1;	// this is ok
+	// slicea[10] = 12;  index out of range so error
 	printSlice("slicea", slicea)
 
 
+	sliceb := make( []int, 0, 5) // empty slice will be created with capacity of 5
+	printSlice("sliceb", sliceb)
 
-
+	// Nil slices: The zero value of a slice is nil
+	// Nil has length and capacity of 0
+	var z []int;
+	if z == nil {
+		fmt.Println("It's nil!")
+	}
 
 }
 
@@ -54,6 +64,7 @@ func main() {
 // and this is just another example of function
 func printSlice(s string, x []int) /* type is missing*/ {
 
-	fmt.Printf("%s len=%d cap=%d %v \n", s, len(x), cap(x), x)
+	// cap is capacity
+	fmt.Printf("%s len=%d cap=%d %v \n", s, len(x), cap(x), x) 
 	// %s is some sort of Interfacing but we'll leave it for now
 }
