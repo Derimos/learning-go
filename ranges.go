@@ -1,4 +1,4 @@
-// 9. Range is a foreach
+// 9. Range is a Golangs foreach
 
 package main
 
@@ -13,7 +13,7 @@ func main() {
 
 	slice := make( []int, 10)
 	for i := range slice {
-		slice[i] = 1 << uint(i)
+		slice[i] = 1 << uint(i) // << is bit shift
 	}
 
 	fmt.Printf("slice = %v \n", slice)
@@ -24,4 +24,12 @@ func main() {
 		fmt.Printf("%d ", value)
 	}
 
+
+	exampleslice := make([]int, 5, 10)
+
+	fmt.Printf("\nSlice: %d\n", exampleslice)
+
+	for key, value := range exampleslice {
+		fmt.Printf("Index: %d and Valud: %d \n", key, value)
+	}
 }
