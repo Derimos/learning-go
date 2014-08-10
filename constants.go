@@ -1,6 +1,7 @@
 // 4. Constants
 
 package main
+
 import "fmt"
 
 // can be character, string or boolean values

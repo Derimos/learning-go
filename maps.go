@@ -84,7 +84,6 @@ func main() {
 	fmt.Println("The value:", v, "Present?", ok)
 
 
-
-
+	// Show exercise!
 	
 }
