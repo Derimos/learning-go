@@ -17,7 +17,7 @@ func WordCount(s string) map[string]int {
 	for _ , word := range words {
 		wordsmap[word] = len(word)
 	}
-    return wordsmap
+	return wordsmap
 }
 
 func main() {
