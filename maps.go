@@ -1,4 +1,4 @@
-// 10 Maps
+// 10. Maps
 
 package main 
 
