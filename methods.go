@@ -18,6 +18,8 @@ func (v *Vertex) Abs() float64 {
 }
 
 // Or any other type you define in you package
+// in C or Java this must be pointer to struct
+
 type MyFloat float64 // so we have our out float64
 
 func (f MyFloat) Abs() float64 { // and Abs method for MyFloat. Notice same func name
