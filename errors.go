@@ -26,3 +26,7 @@ func main() {
 		fmt.Println(err)
 	}
 }
+
+// type error interface {
+//     Error() string
+// }

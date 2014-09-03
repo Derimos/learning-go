@@ -25,6 +25,8 @@ Agenda:
 13. methods.go
 14. methods_vol2.go
 15. interfaces.go // exercise interfaces
+16. Errors
+17. Web Servers
 
 This is just an introduction and it's very premature. 
 I don't know enough to convince you why go is so good and powerfull or better that the rest of the
